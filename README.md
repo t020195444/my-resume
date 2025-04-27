@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 個人履歷與作品集網站
 
-## Getting Started
+這是一個使用 **Next.js 13 + TailwindCSS + Framer Motion** 打造的個人履歷與作品集展示網站。
 
-First, run the development server:
+參考網址: https://my-resume-omega-five.vercel.app/
+
+## ✨ 功能介紹
+
+- 分頁式切換（關於我 / 經歷 / 作品集 / 部落格）
+- 使用者體驗良好的動畫效果（Framer Motion）
+- 支援部落格功能，外部連結至 HackMD
+- 響應式設計，適合各種螢幕尺寸
+- 暗色模式 / 淺色模式自動適配
+
+## 📦 技術棧
+
+- [Next.js 13 App Router](https://nextjs.org/docs/app/building-your-application/routing)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- TypeScript (可選)
+
+## 🚀 如何啟動專案
+
+1. 安裝依賴：
+
+```bash
+npm install
+```
+
+2. 啟動本地開發伺服器：
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. 打開瀏覽器輸入 `http://localhost:3000` 查看網站！
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ 部署教學
 
-## Learn More
+### 推上 GitHub
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin https://github.com/你的帳號/你的repo.git
+git push -u origin main
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 部署到 Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. 到 [Vercel](https://vercel.com/) 註冊帳號並登入。
+2. 點擊 `New Project`，選擇 GitHub 上的專案。
+3. 按下 `Deploy` 即可上線！
 
-## Deploy on Vercel
+（之後只要 `git push`，Vercel 會自動重新部署！）
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 目錄結構簡介
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+  app/
+    blog/          # 部落格頁面列表
+      [slug]/      # 每篇文章動態路由（連到 HackMD）
+        page.tsx
+    page.tsx       # 首頁（包含關於我、經歷、作品集、部落格切換）
+public/
+  images/          # 作品集圖片資源
+```
+
+## ✨ 作者資訊
+
+- 姓名：姜雲瀚 (Herry Chiang)
+- 職位：前端工程師
+- 專長：React.js、Next.js、TailwindCSS、Node.js、MongoDB
+- 地區：台灣 台北市
+
+---
+
+感謝你的觀看！如果你喜歡這個專案，歡迎 Star 🌟 或 Fork！
