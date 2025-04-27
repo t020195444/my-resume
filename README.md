@@ -2,6 +2,8 @@
 
 這是一個使用 **Next.js 13 + TailwindCSS + Framer Motion** 打造的個人履歷與作品集展示網站。
 
+參考網址: https://my-resume-omega-five.vercel.app/
+
 ## ✨ 功能介紹
 
 - 分頁式切換（關於我 / 經歷 / 作品集 / 部落格）
