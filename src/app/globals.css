@@ -9,8 +9,8 @@
   --color-accent: #1f4fb8;
   --font-sans: system-ui, -apple-system, "PingFang TC", "Noto Sans TC",
     "Microsoft JhengHei", sans-serif;
-  --font-display: var(--font-grotesk), "PingFang TC", "Noto Sans TC",
-    "Microsoft JhengHei", system-ui, sans-serif;
+  --font-display: system-ui, -apple-system, "Segoe UI", "PingFang TC",
+    "Noto Sans TC", "Microsoft JhengHei", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
