@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-grotesk",
+  weight: ["500", "700"],
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Herry's resume",
-  description: "Welcome to my website!",
+  title: "姜雲瀚 Herry｜網頁前端工程師",
+  description:
+    "四年多前端經驗，React、Next.js、TypeScript，也寫 ASP.NET Core 後端。工作經歷與個人作品。",
 };
 
 export default function RootLayout({
@@ -23,10 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="zh-Hant">
+      <body className={`${spaceGrotesk.variable} antialiased`}>
         {children}
       </body>
     </html>
